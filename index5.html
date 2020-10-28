@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 7. 연산자
+        // 1)산술연산자 : + - * /
+        // 2)대입연산자 : =, +=, =+, *=, /=, %=
+        // 3)비교연산자
+
+// 1
+        var x = 10;
+        var y = 20;
+        console.log( x + y ); //30
+
+// 2 대입연산자
+    // 증가(++)
+    // 감소(--)
+    // 나머지(%)
+    // 할당(+=, =+, *=, /=, %=)
+
+        var x = 10;
+        x = y; //y의 값을 x에 대입한다
+
+        var y = 10;
+        // y++; //후위연산(할당을 하고 값을 증가)
+        // ++y; //전위연산(증가를 하고 값을 할당)
+
+        var z;
+        // z = y++;
+        z = ++y;
+        console.log(z); // 10 // 11
+        console.log(y); // 11 // 11
+
+
+        var a = 7;
+        var b = 2;
+        console.log( a / b ); //3.5
+        console.log( a % b ); // 1 :홀수짝수 구분, 3의 배수만 뽑아낸다 경우의 수를 나머지 0,1,2 에 따라서 나눠 생각함
+
+
+
+// ★정말 중요한 연산★ : 증가 후 할당
+        var c = 10;
+        // c += 1;
+        // c = c + 1;
+
+        // console.log( c += 1 ) //11
+        // console.log( c = c + 1 ) //11
+
+// 3. 비교연산자 : 의 반환값으로는 진위여부(참,거짓)이 출력
+//     1) 비교(==) : 같지않을때 false / 같을때 true
+//     2) 엄격한 비교(===)
+//     3) 같지않음(!=) : 같지않을때 true / 같을때 false
+//     4) 엄격한 같지않음(!==)
+//     5)크고작음(>,<,>=,>=)
+
+    var d = 10, e = "10";
+    console.log(d == e); //내용만 비교
+    console.log(d === e); //자료형까지 비교
+
+    // var f = 10, g = "10";
+    // console.log(f != g); //둘이 같은데? 비교가 거짓이네
+    // console.log(f !== g); //둘이 다른데? 비교가 참이네
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
